@@ -1,20 +1,12 @@
-/*
-
-DIGITAL TREND
-
-https://templatemo.com/tm-538-digital-trend
-
-*/
-  
   @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;700&display=swap');
 
   :root {
-    --primary-color:        #057a8d;
-    --secondary-color:      #f1c111;
-    --white-color:          #ffffff;
-    --dark-color:           #171819;
-    --project-bg:           #f0f8ff;
-    --menu-bg:              #0c8195;
+    --primary-color:        #2E5D3F;
+    --secondary-color:      #E68CA0;
+    --white-color:          #FDF6E3;
+    --dark-color:           #1E1E1C;
+    --project-bg:           #F5F5F5;
+    --menu-bg:              #2E5D3F;
 
     --title-color:          #15141a;
     --gray-color:           #909090;
@@ -142,6 +134,33 @@ https://templatemo.com/tm-538-digital-trend
     color: var(--white-color);
     border-color: transparent;
   }
+
+  .back-to-top {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: var(--secondary-color);
+    color: var(--white-color);
+    padding: 10px 15px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: bold;
+    opacity: 0;              
+    pointer-events: none;    
+    transition: opacity 0.4s ease;
+  }
+
+  .back-to-top.show {
+    opacity: 1;
+    pointer-events: auto;    
+  }
+
+  .back-to-top:visited {
+    color: var(--white-color);        /* same as normal */
+    background-color: var(--secondary-color); /* same as normal */
+  }
+
+
 
 
   /*---------------------------------------
@@ -545,7 +564,18 @@ https://templatemo.com/tm-538-digital-trend
   .site-footer {
     background: var(--dark-color);
     padding: 7em 0 6em 0;
+    text-align: center;        /* centers inline text */
+    display: flex;             /* enables flexbox */
+    flex-direction: column;    /* stacks items vertically */
+    align-items: center;
   }
+
+  .site-footer .row {
+    display: flex;
+    justify-content: center;  /* center the group */
+    text-align: center;
+  }
+
 
   .site-footer a {
     color: var(--p-color);
@@ -569,7 +599,8 @@ https://templatemo.com/tm-538-digital-trend
   }
 
   .copyright-text {
-    margin-top: 5.3em;
+    margin-top: 2em;
+    text-align: center;
   }
 
 
@@ -680,7 +711,9 @@ https://templatemo.com/tm-538-digital-trend
     }
 
     .copyright-text {
-      margin: 2.5em 0 1em 0;
+      /* margin: 2.5em 0 1em 0; */
+      margin: 1em 0;
+      text-align: center;
     }
 
     .footer-link li {
