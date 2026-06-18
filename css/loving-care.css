@@ -216,6 +216,11 @@
     width: 100%;
   }
 
+  .gallery img {
+    height: 400px;
+    object-fit: cover;
+    width: 100%;
+  }
 
 
   /*---------------------------------------
@@ -337,6 +342,13 @@
     top: 8px;
   }
 
+  .navbar-brand .afh-subtitle {
+    font-size: 0.8em;
+    font-weight: 300;
+    display: block;
+    margin: 0;
+    line-height: 1;
+  }
 
 
   /*---------------------------------------
